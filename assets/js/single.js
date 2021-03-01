@@ -38,19 +38,10 @@ var getRepoIssues = function (repo) {
       // if not successful, redirect to homepage
       document.location.replace("./index.html");
     }
-  
-  });
 
-//   if (response.ok) {
-//     response.json().then(function (data) {
-//       displayIssues(data);
-//     });
-//   }
-//   if(repoName) {
-//     repoNameEl.textContent = repoName;
-//     getRepoIssues(repoName);
-//   }
-// }
+  });
+}
+
 
 var displayIssues = function (issues) {
   if (issues.length === 0) {
